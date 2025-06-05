@@ -1,5 +1,5 @@
 const usermodel  = require("../models/user")
-async function Register(req, res) {
+async function Postdata(req, res) {
     try {
       const { firstname, lastname, title, profilephoto } = req.body;
   
@@ -21,4 +21,4 @@ async function getdata(req, res) {
       res.status(500).json({ error: "Internal server error" });
     }
   }
-module.exports = {Register,getdata}
+module.exports = {Postdata,getdata}
