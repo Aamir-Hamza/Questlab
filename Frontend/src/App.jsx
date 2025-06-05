@@ -16,7 +16,7 @@ function App() {
   }, []);
 
   function fetchData() {
-    fetch("http://localhost:2025/api/users/getdata")
+    fetch("https://questlab-cu0s.onrender.com/api/users/getdata")
       .then((res) => res.json())
       .then((finalData) => setData(finalData))
       .catch((err) => console.error("Failed to fetch users", err));
@@ -37,7 +37,7 @@ function App() {
   function submitHandler(e) {
     e.preventDefault();
 
-    fetch("http://localhost:2025/api/users/register", {
+    fetch("https://questlab-cu0s.onrender.com/api/users/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
