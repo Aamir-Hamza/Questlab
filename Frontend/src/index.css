@@ -1,12 +1,12 @@
 :root {
   /* Color System */
-  --primary: #2563eb;
-  --primary-dark: #1d4ed8;
+  --primary: #111;
+  --primary-dark: #000;
   --secondary: #64748b;
   --success: #22c55e;
   --danger: #ef4444;
   --warning: #f59e0b;
-  --info: #3b82f6;
+  --info: #111;
   
   /* Neutral Colors */
   --background: #ffffff;
@@ -160,4 +160,20 @@ input:focus, textarea:focus, select:focus {
   .container {
     padding: 0 var(--spacing-sm);
   }
+}
+
+a, .nav-link, .footer-link {
+  color: var(--primary);
+}
+
+a:hover, .nav-link:hover, .footer-link:hover {
+  color: var(--primary-dark);
+}
+
+/* Remove any blue gradients from .hero-title if present */
+.hero-title {
+  color: #111;
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
 }

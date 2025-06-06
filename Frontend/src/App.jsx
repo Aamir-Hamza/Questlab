@@ -95,7 +95,7 @@ function App() {
       <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
         <div className="container nav-content">
           <h1>User Directory</h1>
-          <button className="btn btn-primary" onClick={btnHandler}>
+          <button className="btn btn-black" onClick={btnHandler}>
             Add New Resident
           </button>
         </div>
